@@ -62,19 +62,23 @@ const tileData = [
     {
         img: chi,
         title: 'Chicago',
+        day: '3 days',
     },
     {
         img: nyc,
         title: 'New York City',
+        day: '5 days',
 
     },
     {
         img: sd,
         title: 'San Diego',
+        day: '10 days',
     },
     {
         img: stl,
         title: 'Seattle',
+        day: '15 days',
     },
 ];
 
@@ -171,7 +175,7 @@ export default function HomeSearch() {
                         <Typography variant='h5'
                         align="center"
                         style={{margin:15, color: '#fc6762'}}>
-                            Trips you might like
+                            You might also like
                         </Typography>
 
                         <GridList className={classes.gridList} cols={4}>
@@ -180,6 +184,7 @@ export default function HomeSearch() {
                                     <img src={tile.img} alt={tile.title} />
                                     <GridListTileBar
                                         title={tile.title}
+                                        subtitle={tile.day}
                                         classes={{
                                             root: classes.titleBar,
                                             title: classes.title,
