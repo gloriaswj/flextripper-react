@@ -3,6 +3,7 @@
 @import "styles/Header.css";
 @import "styles/Footer.css";
 @import "styles/App.css";
+@import "styles/Home/Home.css";
 
 body {
   margin: 0;
